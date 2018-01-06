@@ -1,15 +1,17 @@
 body{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 
 }
 .conteiner {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: 50px 300px 300px 500px 80px;
+    grid-template-rows: 100% 100% 100% 100% 100%;
     grid-gap: 2px;
     grid-template-areas:
         "a a a a a a a a a a a"
@@ -48,12 +50,12 @@ body{
 }
 .h{
   grid-area: h;
-
+  padding: 30px;
 }
 
 @media (max-width: 700px) {
     .conteiner {
-      grid-template-rows: 50px 300px 380px 200px 500px 500px 500px 100px;
+      grid-template-rows: 100% 100% 100% 100% 100% 100% 100% 100%;
       grid-gap: 5px;
       grid-template-areas:
           "a a a a a a a a a a a"
